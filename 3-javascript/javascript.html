@@ -4,9 +4,17 @@
         
     </head>
     <body>
-        <button onclick="alert('Hi Bitsplease')" >Click Me</button>
+        <p id="text">Hello Bitsplease!</p>
+
+        <button id="myButton">Change text</button>
+        
         <script type="text/Javascript">
-            alert("Page is Loaded");
+
+            document.getElementById("myButton").onclick = function() {
+
+                document.getElementById("text").innerHTML = "Hey Guys!"
+            }
+                
 
         </script>
         
